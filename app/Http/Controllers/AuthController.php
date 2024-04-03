@@ -62,7 +62,7 @@ public function logout(Request $request)
   
         $request->session()->invalidate();
   
-        return redirect('/');
+        return redirect('/login');
     }
     
     public function profile()
